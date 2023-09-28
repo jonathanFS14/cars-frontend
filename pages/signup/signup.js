@@ -14,13 +14,13 @@ async function singUp(event) {
   var username = document.getElementById("input-username").value
   var email = document.getElementById("input-email").value
   var password = document.getElementById("input-password").value
-  var firstname = document.getElementById("input-firstname").value
-  var lastname = document.getElementById("input-lastname").value
+  var firstName = document.getElementById("input-firstname").value
+  var lastName = document.getElementById("input-lastname").value
   var street = document.getElementById("input-street").value
   var city = document.getElementById("input-city").value
   var zip = document.getElementById("input-zip").value
 
-  const member = { username, email, password, firstname, lastname, street, city, zip }
+  const member = { username, email, password, firstName, lastName, street, city, zip }
 
   const options = makeOptionsToken("POST", member, true);
   fetch(URL, options)
@@ -31,5 +31,5 @@ async function singUp(event) {
         document.getElementById("new-member-response").innerHTML = err
     )
 
-    document.getElementById("form").reset();
+    document.getElementById("input-username").reset();
 }
