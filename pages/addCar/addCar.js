@@ -24,3 +24,4 @@ function addCar(){
       carResponse => document.getElementById("new-car-response")
       .innerText = JSON.stringify(carResponse, null, 3))
   }
+  
