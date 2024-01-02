@@ -31,5 +31,5 @@ async function singUp(event) {
         document.getElementById("new-member-response").innerHTML = err
     )
 
-    document.getElementById("input-username").reset();
+   // document.getElementById("input-username").reset();
 }
